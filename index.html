@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Conversor XML a Excel(.xlsx)</title>
+	<style type="text/css">
+		body{
+			font-family: arial, rverdana, serif;
+			background-color: #ededed;
+			padding:100px;
+		}
+		#container{
+			width:600px;
+			margin: auto;
+		}
+		#panel{
+		
+		}
+		#headpanel{
+			height:40px;
+			background-color: #F44336;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			color:white;
+			text-align: center;
+			font-size: 1.5em;
+
+			display: flex;
+    		justify-content: center;
+    		align-content: center;
+    		flex-direction: column;
+		}
+		form{
+			height: 170px;
+			width:600px;
+			box-sizing: border-box;;
+			padding: 30px;
+			text-align: center;
+			background-color: white;
+		}
+		#sbm{
+			background-color: #EF5350;
+			height: 40px;
+			width: 180px;
+			border:none;
+			color:white;
+			font-weight: bold;
+			font-size: 1em;
+			cursor: pointer;
+			border-radius: 10px;
+			transition: background-color 0.5s;
+			margin: auto;
+		}
+		#sbm:hover{
+			background-color:#C62828;
+			transition: background-color 0.5s;
+		}
+		#subir{
+
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="headpanel">Conversor XML a Excel (.xlsx)</div>
+		<div id="panel">
+			<form method="post" action="/upload" enctype="multipart/form-data">
+				<input id="subir" type="file" name="archivo"><br/><br/><br/>
+				<input id="sbm" type="submit" name="subir" value="Iniciar conversión">
+			</form>
+		</div>
+		
+	</div>
+	
+</body>
+</html>
